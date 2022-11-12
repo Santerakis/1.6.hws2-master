@@ -15,7 +15,7 @@ type MessageType = {
     user: UserType
     message: MessageMessageType
 }
-type MessagePropsType = {
+export type MessagePropsType = {
     message: MessageType
 }
 // нужно отобразить приходящие данные
