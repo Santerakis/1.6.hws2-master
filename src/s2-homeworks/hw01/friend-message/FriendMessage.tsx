@@ -2,18 +2,21 @@ import React from 'react'
 import s from './FriendMessage.module.css'
 
 // создать тип вместо any и отобразить приходящие данные
+type UserType = {
+    avatar: string
+    name: string
+}
+type MessageMessageType = {
+    text: string
+    time: string
+}
+type MessageType = {
+    id: number
+    user: UserType
+    message: MessageMessageType
+}
 export type FriendMessageProps = {
-    message: {
-        id: number,
-        user: {
-            avatar: string,
-            name: string,
-        },
-        message: {
-            text: string,
-            time: string,
-        }
-    }
+    message: MessageType
 }
 const FriendMessage = (props: any) => {
     return (
