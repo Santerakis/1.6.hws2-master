@@ -46,6 +46,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
         error && setError('Ошибка! Введите имя!' +
             '')
+        setError('')
+
     }
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
@@ -56,7 +58,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
-        setError('')
         pureOnEnter(e, addUser)
     }
 
