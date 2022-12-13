@@ -19,5 +19,4 @@ function HW5() {
         </HashRouter>
     )
 }
-
 export default HW5
