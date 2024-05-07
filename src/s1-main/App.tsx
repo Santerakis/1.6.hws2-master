@@ -5,10 +5,17 @@ import HW2 from "../s2-homeworks/hw02/HW2";
 import HW3 from "../s2-homeworks/hw03/HW3";
 import HW4 from "../s2-homeworks/hw04/HW4";
 import HW5 from "../s2-homeworks/hw05/HW5";
+import a from './1.png'
+import b from './2.png'
+import c from './3.png'
+
 
 function App() {
     return (
         <div className={s.App}>
+            <img src={a} />
+            <img src={b} alt={'a'}/>
+            <img src={c} alt={'a'}/>
             {/*<HW1/>*/}
             {/*раскомментировать по ходу выполнения*/}
             {/*<HW2/>*/}
